@@ -1,6 +1,6 @@
-# Dojo 2 core [![Build Status](https://travis-ci.org/dojo/dojo2.png)](https://travis-ci.org/dojo/dojo2)
+# Dojo 2 package template [![Build Status](https://travis-ci.org/dojo/dojo2.png)](https://travis-ci.org/dojo/dojo2)
 
-TODO: Update travis-ci info for your package
+TODO: Update travis-ci info for your package, and the package name
 
 The Dojo 2 core library provides TypeScript & JavaScript authors with a complete set of tools for developing
 well-structured, highly maintainable applications.
