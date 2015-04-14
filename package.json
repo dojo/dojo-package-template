@@ -5,7 +5,7 @@
 	"description": "Dojo 2 core. The Dojo 2 core library provides TypeScript & JavaScript authors with a complete set of tools for developing well-structured, highly maintainable applications.",
 	"homepage": "http://dojotoolkit.org",
 	"bugs": {
-		"url": "https://github.com/dojo/dojo2/issues"
+		"url": "https://github.com/dojo/dojo2-package-template/issues"
 	},
 	"license": "BSD-3-Clause",
 	"repository": {
@@ -20,6 +20,6 @@
 		"grunt-ts": "3.0.0",
 		"grunt-tslint": "2.0.0",
 		"intern": "2.2.2",
-		"typescript": "1.4.1"
+		"typescript": "1.5.0-alpha"
 	}
 }
