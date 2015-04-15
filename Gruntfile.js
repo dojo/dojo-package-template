@@ -52,7 +52,7 @@ module.exports = function (grunt) {
 				name: 'dojo'
 			},
 			/* Change to correct package name, path */
-			dojo-package-template: {
+			'dojo-package-template': {
 				options: {
 					out: 'dist/typings/dojo/dojo-package-template-2.0.d.ts'
 				},
@@ -220,4 +220,3 @@ module.exports = function (grunt) {
 	grunt.registerTask('ci', [ 'tslint', 'build-amd', 'test' ]);
 	grunt.registerTask('default', [ 'clean', 'build' ]);
 };
-
