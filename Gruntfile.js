@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('intern');
 
 	grunt.initConfig({
-		all: [ 'src/**/*.ts', '!src/loader.ts', 'typings/tsd.d.ts' ],
+		all: [ 'src/**/*.ts', 'typings/tsd.d.ts' ],
 
 		clean: {
 			dist: {
@@ -117,13 +117,6 @@ module.exports = function (grunt) {
 				outDir: 'dist',
 				src: [ '<%= all %>' ]
 			},
-			amdLoader: {
-				options: {
-					module: 'commonjs'
-				},
-				outDir: 'dist',
-				src: [ 'src/loader.ts' ]
-			},
 			cjs: {
 				options: {
 					module: 'commonjs'
@@ -207,7 +200,6 @@ module.exports = function (grunt) {
 	]);
 	grunt.registerTask('build-amd', [
 		'clean:amd',
-		'ts:amdLoader',
 		'ts:amd',
 		'_process-build',
 		'rename:amd'
