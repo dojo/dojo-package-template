@@ -13,8 +13,10 @@
     ],
     "files": [
         "./intern.ts",
+		"./intern-local.ts",
 		"./unit/all.ts",
 		"./functional/all.ts",
+		"../typings/tsd.d.ts",
 		"./typings/tsd.d.ts"
     ]
 }
