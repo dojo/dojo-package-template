@@ -2,12 +2,9 @@
 .tscache
 *.js
 *.js.map
+!/*.js
 dist
-dist-amd
-dist-cjs
-dist-es2015
 node_modules
-bower_modules
-!src/node.js
-!/Gruntfile.js
+bower_components
+tests/typings/dist/
 .baseDir.ts

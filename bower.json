@@ -1,22 +1,19 @@
 {
-	"name": "dojo-package-template",
-	"description": "Dojo 2 core. The Dojo 2 core library provides TypeScript & JavaScript authors with a complete set of tools for developing well-structured, highly maintainable applications.",
+	"name": "dojo2-<< package-name >>",
+	"description": "<< DESCRIPTION GOES HERE >>",
 	"keywords": [
 		"dojo",
-		"foo"
+		"dojo2"
 	],
 	"authors": [
-		"Foo Bar",
-		"Bar Foo"
 	],
 	"main": "main.js",
 	"homepage": "http://dojotoolkit.org/",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/dojo/dojo2-package-template.git"
+		"url": "git://github.com/dojo/<< package-name >>.git"
 	},
 	"dependencies": {
-
 	},
 	"ignore": [
 		".*",
