@@ -1,4 +1,4 @@
-# Dojo 2 package template [![Build Status](https://travis-ci.org/dojo/dojo2.png)](https://travis-ci.org/dojo/dojo2)
+# dojo-<< package-name >> [![Build Status](https://travis-ci.org/dojo/<< package-name >>.png)](https://travis-ci.org/dojo/<< package-name >>)
 
 TODO: Update travis-ci info for your package, and the package name
 
@@ -27,7 +27,7 @@ TODO: Add appropriate usage and instruction guidelines
 
 ## How do I contribute?
 
-1. [Open an issue](https://github.com/dojo/dojo2/issues) for the work you are going to do.
+1. [Open an issue](https://github.com/dojo/<< package-name >>/issues) for the work you are going to do.
 2. Sign the [Dojo Foundation Contributor License Agreement](http://dojofoundation.org/about/claForm).
    You only need to do this once to contribute to all Dojo Foundation projects.
 3. Submit a pull request!
@@ -36,6 +36,10 @@ TODO: Update with correct issue link for this package
 TODO: Add link to location on new website on how to get involved
 
 ## Licensing information
+
+TODO: If third-party code was used to write this library, make a list of project names and licenses here
+
+* [Third-party lib one](https//github.com/foo/bar) ([New BSD](http://opensource.org/licenses/BSD-3-Clause))
 
 © 2004–2015 Dojo Foundation & contributors. [New BSD](http://opensource.org/licenses/BSD-3-Clause) license.
 
