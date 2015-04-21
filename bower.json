@@ -1,5 +1,5 @@
 {
-	"name": "dojo2-<< package-name >>",
+	"name": "dojo-<< package-name >>",
 	"description": "<< DESCRIPTION GOES HERE >>",
 	"keywords": [
 		"dojo",
