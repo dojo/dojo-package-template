@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-ts');
 	grunt.loadNpmTasks('grunt-tslint');
-	grunt.loadNpmTakss('dts-generator');
+	grunt.loadNpmTasks('dts-generator');
 	grunt.loadNpmTasks('intern');
 
 	grunt.initConfig({
