@@ -44,7 +44,7 @@ export var useLoader = {
 export var loader = {
 	// Packages that should be registered with the loader in each testing environment
 	packages: [
-		{ name: 'dist', location: '_build/dist' },
+		{ name: 'src', location: '_build/src' },
 		{ name: 'tests', location: '_build/tests' }
 	]
 };
