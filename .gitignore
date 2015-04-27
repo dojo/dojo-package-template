@@ -4,6 +4,7 @@
 *.js.map
 !/*.js
 dist
+_build
 node_modules
 bower_components
 tests/typings/dist/
