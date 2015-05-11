@@ -1,5 +1,5 @@
 {
-	"name": "dojo-test",
+	"name": "dojo-<< package-name >>",
 	"version": "2.0.0-pre",
 	"description": "<< DESCRIPTION GOES HERE >>",
 	"homepage": "http://dojotoolkit.org",
@@ -17,9 +17,11 @@
 		"grunt-contrib-clean": "0.6.0",
 		"grunt-contrib-copy": "0.8.0",
 		"grunt-contrib-watch": "0.6.1",
+		"grunt-text-replace": "0.4.0",
 		"grunt-ts": "3.0.0",
 		"grunt-tslint": "2.0.0",
+		"tslint": "2.1.1",
 		"intern": "2.2.2",
-		"typescript": "https://github.com/csnover/TypeScript/archive/0.20150422.0+378b5ffd1af2249658c8b7a3dc7465d911af93ff.tar.gz"
+		"typescript": "Arnavion/typescript-github#2015-05-07-e1d05150f6acef05452772192a4abdfc7eb671eb"
 	}
 }

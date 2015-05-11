@@ -11,18 +11,22 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-text-replace');
 	grunt.loadNpmTasks('grunt-ts');
 	grunt.loadNpmTasks('grunt-tslint');
 	grunt.loadNpmTasks('dts-generator');
 	grunt.loadNpmTasks('intern');
 
 	var compilerOptions = grunt.file.readJSON('tsconfig.json').compilerOptions;
+	var packageJson = grunt.file.readJSON('package.json');
 
 	grunt.initConfig({
-		name: 'dojo-<< package-name >>',
+		name: packageJson.name,
+		version: packageJson.version,
 		all: [ 'src/**/*.ts', 'typings/tsd.d.ts' ],
 		tests: [ 'tests/**/*.ts', 'typings/tsd.d.ts' ],
 		devDirectory: compilerOptions.outDir,
+		istanbulIgnoreNext: '/* istanbul ignore next */',
 
 		clean: {
 			dist: {
@@ -70,7 +74,7 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				options: {
-					out: 'dist/typings/<%= name %>/<%= name %>-2.0.d.ts'
+					out: 'dist/typings/<%= name %>/<%= name %>-<%= version %>.d.ts'
 				},
 				src: [ '<%= all %>' ]
 			}
@@ -118,6 +122,23 @@ module.exports = function (grunt) {
 		rewriteSourceMaps: {
 			dist: {
 				src: [ 'dist/_debug/**/*.js.map' ]
+			}
+		},
+
+		replace: {
+			addIstanbulIgnore: {
+				src: [ '<%= devDirectory %>/**/*.js' ],
+				overwrite: true,
+				replacements: [
+					{
+						from: /^(var __(?:extends|decorate) = )/gm,
+						to: '$1<%= istanbulIgnoreNext %> '
+					},
+					{
+						from: /^(\()(function \(deps, )/m,
+						to: '$1<%= istanbulIgnoreNext %> $2'
+					}
+				]
 			}
 		},
 
@@ -196,7 +217,8 @@ module.exports = function (grunt) {
 	});
 
 	grunt.registerTask('dev', [
-		'ts:dev'
+		'ts:dev',
+		'replace:addIstanbulIgnore'
 	]);
 	grunt.registerTask('dist', [
 		'ts:dist',
