@@ -11,6 +11,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-coveralls');
+	grunt.loadNpmTasks('grunt-cover-ts');
 	grunt.loadNpmTasks('grunt-text-replace');
 	grunt.loadNpmTasks('grunt-ts');
 	grunt.loadNpmTasks('grunt-tslint');
@@ -86,6 +88,17 @@ module.exports = function (grunt) {
 			}
 		},
 
+		cover_ts: {
+			files: {
+				src: 'lcov.info',
+				dest: '<%= devDirectory %>lcov.info'
+			}
+		},
+
+		coveralls: {
+			src: '<%= devDirectory %>lcov.info'
+		},
+
 		dtsGenerator: {
 			options: {
 				baseDir: 'src',
@@ -107,19 +120,19 @@ module.exports = function (grunt) {
 			},
 			runner: {
 				options: {
-					reporters: [ 'runner', 'lcovhtml' ]
+					reporters: [ 'runner', 'lcovhtml', 'lcov' ]
 				}
 			},
 			local: {
 				options: {
 					config: '<%= devDirectory %>/tests/intern-local',
-					reporters: [ 'runner', 'lcovhtml' ]
+					reporters: [ 'runner', 'lcovhtml', 'lcov' ]
 				}
 			},
 			client: {
 				options: {
 					runType: 'client',
-					reporters: [ 'console', 'lcovhtml' ]
+					reporters: [ 'console', 'lcovhtml', 'lcov' ]
 				}
 			},
 			proxy: {
@@ -267,6 +280,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('test', [ 'dev', 'intern:client' ]);
 	grunt.registerTask('test-local', [ 'dev', 'intern:local' ]);
 	grunt.registerTask('test-proxy', [ 'dev', 'intern:proxy' ]);
-	grunt.registerTask('ci', [ 'tslint', 'test' ]);
+	grunt.registerTask('ci', [ 'tslint', 'test', 'covert_ts', 'coveralls' ]);
 	grunt.registerTask('default', [ 'clean', 'dev' ]);
 };
