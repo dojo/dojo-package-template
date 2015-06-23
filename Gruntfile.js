@@ -280,6 +280,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('test', [ 'dev', 'intern:client' ]);
 	grunt.registerTask('test-local', [ 'dev', 'intern:local' ]);
 	grunt.registerTask('test-proxy', [ 'dev', 'intern:proxy' ]);
-	grunt.registerTask('ci', [ 'tslint', 'test', 'covert_ts', 'coveralls' ]);
+	grunt.registerTask('ci', [ 'tslint', 'test', 'cover_ts', 'coveralls' ]);
 	grunt.registerTask('default', [ 'clean', 'dev' ]);
 };
