@@ -12,15 +12,15 @@
 		"url": "https://github.com/dojo/<< package-name >>.git"
 	},
 	"devDependencies": {
-		"dts-generator": "1.4.1",
+		"dts-generator": "1.5.0",
 		"grunt": "0.4.5",
 		"grunt-contrib-clean": "0.6.0",
 		"grunt-contrib-copy": "0.8.0",
 		"grunt-contrib-watch": "0.6.1",
 		"grunt-text-replace": "0.4.0",
-		"grunt-ts": "3.0.0",
-		"grunt-tslint": "2.0.0",
-		"tslint": "2.1.1",
+		"grunt-ts": "4.2.0-beta.1",
+		"grunt-tslint": "2.3.1-beta",
+		"tslint": "2.4.0",
 		"intern": "2.2.2",
 		"typescript": "1.5.3"
 	}
