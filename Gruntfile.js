@@ -11,6 +11,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-release');
 	grunt.loadNpmTasks('grunt-text-replace');
 	grunt.loadNpmTasks('grunt-ts');
 	grunt.loadNpmTasks('grunt-tslint');
@@ -126,6 +127,21 @@ module.exports = function (grunt) {
 				options: {
 					proxyOnly: true
 				}
+			}
+		},
+
+		release: {
+			options: {
+				// Update the bower.json version as well
+				additionalFiles: [ 'bower.json' ],
+				// Run tasks after the version has been updated in package.json and bower.json
+				afterBump: [ 'clean', 'dist' ],
+				// Publish the "dist/" directory to npm
+				folder: 'dist/',
+				commitMessage: 'Updating source version to <%= version %>',
+				tagMessage: 'Release <%= version %>',
+				// Update the `version` property on the `packageJson` object.
+				updateVars: [ packageJson ]
 			}
 		},
 
