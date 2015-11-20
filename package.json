@@ -12,7 +12,10 @@
 		"url": "https://github.com/dojo/<< package-name >>.git"
 	},
 	"devDependencies": {
+		"codecov.io": "0.1.6",
+		"dojo-loader": "2.0.0-alpha.1",
 		"dts-generator": "1.5.0",
+		"glob": "3.2.7",
 		"grunt": "0.4.5",
 		"grunt-contrib-clean": "0.6.0",
 		"grunt-contrib-copy": "0.8.0",
@@ -20,8 +23,10 @@
 		"grunt-text-replace": "0.4.0",
 		"grunt-ts": "3.0.0",
 		"grunt-tslint": "2.5.0",
-		"tslint": "2.5.0",
 		"intern": "3.0.3",
+		"istanbul": "0.3.17",
+		"remap-istanbul": "git://github.com/sitepen/remap-istanbul.git#dd9f5cb3fe8d6261739ce0ccb49e7825239d43f9",
+		"tslint": "2.5.0",
 		"typescript": "1.6.2"
 	}
 }
