@@ -10,7 +10,6 @@ export const proxyUrl = 'http://localhost:9000/';
 // Note that the `build` capability will be filled in with the current commit ID from the Travis CI environment
 // automatically
 export const capabilities = {
-	'browserstack.selenium_version': '2.46.0',
 	'browserstack.debug': false,
 	project: 'Dojo 2',
 	name: 'dojo-<< package-name >>'
@@ -22,8 +21,8 @@ export const capabilities = {
 export const environments = [
 	{ browserName: 'internet explorer', version: [ '9', '10', '11' ], platform: 'WINDOWS' },
 	{ browserName: 'firefox', platform: 'WINDOWS' },
-	{ browserName: 'chrome', platform: 'WINDOWS' },
-	{ browserName: 'Safari', version: '9', platform: 'OS X' }
+	{ browserName: 'chrome', platform: 'WINDOWS' }/*,
+	{ browserName: 'Safari', version: '9', platform: 'OS X' }*/
 ];
 
 // Maximum number of simultaneous integration tests that should be executed on the remote WebDriver service
