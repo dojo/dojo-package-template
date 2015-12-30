@@ -1,5 +1,8 @@
 # dojo-<< package-name >>
 
+<!-- TODO: change and uncomment [![Build Status](https://travis-ci.org/dojo/<< package-name >>.svg?branch=master)](https://travis-ci.org/dojo/<< package-name >>)
+[![codecov.io](http://codecov.io/github/dojo/<< package-name >>/coverage.svg?branch=master)](http://codecov.io/github/dojo/<< package-name >>?branch=master) -->
+
 TODO: Replace with a description of this package
 
 ## Features
@@ -12,7 +15,7 @@ TODO: Add appropriate usage and instruction guidelines
 
 ## How do I contribute?
 
-We appreciate your interest!  Please see the [Guidelines Repository](https://github.com/dojo/guidelines#readme) for the
+We appreciate your interest!  Please see the [Dojo 2 Meta Repository](https://github.com/dojo/meta#readme) for the
 Contributing Guidelines and Style Guide.
 
 ## Testing
@@ -23,7 +26,7 @@ Test cases MUST be written using [Intern](https://theintern.github.io) using the
 
 To test locally in node run:
 
-`grunt test` 
+`grunt test`
 
 To test against browsers with a local selenium server run:
 
@@ -31,7 +34,7 @@ To test against browsers with a local selenium server run:
 
 To test against BrowserStack or Sauce Labs run:
 
-`grunt test:browserstack` 
+`grunt test:browserstack`
 
 or
 
