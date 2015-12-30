@@ -40,6 +40,7 @@ module.exports = function (grunt) {
 		return glob;
 	});
 	var packageJson = grunt.file.readJSON('package.json');
+	var staticTestFiles = [ 'tests/**', '!tests/**/*.js*' ];
 
 	grunt.initConfig({
 		name: packageJson.name,
@@ -48,7 +49,6 @@ module.exports = function (grunt) {
 		tsconfigContent: tsconfigContent,
 		all: [ '<%= tsconfig.filesGlob %>' ],
 		skipTests: [ '<%= all %>' , '!tests/**/*.ts' ],
-		staticTestFiles: 'tests/**/*.{html,css}',
 		devDirectory: '<%= tsconfig.compilerOptions.outDir %>',
 		istanbulIgnoreNext: '/* istanbul ignore next */',
 
@@ -89,7 +89,7 @@ module.exports = function (grunt) {
 			staticTestFiles: {
 				expand: true,
 				cwd: '.',
-				src: [ '<%= staticTestFiles %>' ],
+				src: staticTestFiles,
 				dest: '<%= devDirectory %>'
 			},
 			typings: {
@@ -232,7 +232,7 @@ module.exports = function (grunt) {
 				options: {
 					atBegin: true
 				},
-				files: [ '<%= all %>', '<%= staticTestFiles %>' ],
+				files: [ '<%= all %>' ].concat(staticTestFiles),
 				tasks: [
 					'dev'
 				]
