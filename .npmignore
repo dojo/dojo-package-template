@@ -5,3 +5,4 @@ tests/
 Gruntfile.js
 tslint.json
 *.ts
+.github
