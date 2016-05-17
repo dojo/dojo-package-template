@@ -1,7 +1,9 @@
 # dojo-<< package-name >>
 
-<!-- TODO: change and uncomment [![Build Status](https://travis-ci.org/dojo/<< package-name >>.svg?branch=master)](https://travis-ci.org/dojo/<< package-name >>)
-[![codecov.io](http://codecov.io/github/dojo/<< package-name >>/coverage.svg?branch=master)](http://codecov.io/github/dojo/<< package-name >>?branch=master) -->
+<!-- TODO: change and uncomment
+[![Build Status](https://travis-ci.org/dojo/<< package-name >>.svg?branch=master)](https://travis-ci.org/dojo/<< package-name >>)
+[![codecov.io](http://codecov.io/gh/dojo/<< package-name >>/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/<< package-name >>/branch/master)
+-->
 
 TODO: Replace with a description of this package
 

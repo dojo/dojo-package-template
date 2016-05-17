@@ -11,7 +11,7 @@
 		"moduleResolution": "classic"
 	},
 	"filesGlob": [
-		"./typings/tsd.d.ts",
+		"./typings/main.d.ts",
 		"./src/**/*.ts",
 		"./tests/**/*.ts"
 	],

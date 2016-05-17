@@ -1,7 +1,7 @@
 export * from './intern';
 
 export const environments = [
-	{ browserName: 'internet explorer', version: ['9.0', '10.0', '11.0'], platform: 'Windows 7' },
+	{ browserName: 'internet explorer', version: [ '10.0', '11.0' ], platform: 'Windows 7' },
 	/* Intern 3.0.6 sometimes works on Edge */
 	{ browserName: 'microsoftedge', platform: 'Windows 10' },
 	{ browserName: 'firefox', platform: 'Windows 10' },

@@ -19,7 +19,7 @@ export const capabilities = {
 // OnDemand. Options that will be permutated are browserName, version, platform, and platformVersion; any other
 // capabilities options specified for an environment will be copied as-is
 export const environments = [
-	{ browserName: 'internet explorer', version: [ '9', '10', '11' ], platform: 'WINDOWS' },
+	{ browserName: 'internet explorer', version: [ '10', '11' ], platform: 'WINDOWS' },
 	{ browserName: 'firefox', platform: 'WINDOWS' },
 	{ browserName: 'chrome', platform: 'WINDOWS' }/*,
 	{ browserName: 'Safari', version: '9', platform: 'OS X' }*/
