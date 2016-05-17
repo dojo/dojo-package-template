@@ -1,7 +1,7 @@
 {
 	"name": "dojo-<< package-name >>",
 	"version": "2.0.0-pre",
-  	"typings": "./typings/dojo-<< package-name >>/dojo-<< package-name >>-2.0.0-pre.d.ts",
+  	"typings": "./typings/dist/umd/dojo-<< package-name >>.d.ts",
 	"description": "<< DESCRIPTION GOES HERE >>",
 	"homepage": "http://dojotoolkit.org",
 	"bugs": {
