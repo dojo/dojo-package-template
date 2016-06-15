@@ -2,7 +2,8 @@
 
 <!-- TODO: change and uncomment
 [![Build Status](https://travis-ci.org/dojo/<< package-name >>.svg?branch=master)](https://travis-ci.org/dojo/<< package-name >>)
-[![codecov.io](http://codecov.io/gh/dojo/<< package-name >>/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/<< package-name >>/branch/master)
+[![codecov](https://codecov.io/gh/dojo/<< package-name >>/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/<< package-name >>)
+[![npm version](https://badge.fury.io/js/dojo-<< package-name >>.svg)](http://badge.fury.io/js/dojo-<< package-name >>)
 -->
 
 TODO: Replace with a description of this package
