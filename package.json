@@ -16,7 +16,7 @@
 		"prepublish": "grunt dist",
 		"test": "grunt test"
 	},
-	"typings": "./typings/dist/umd/dojo-<< package-name >>.d.ts",
+	"typings": "./dist/umd/dojo-<< package-name >>.d.ts",
 	"devDependencies": {
 		"codecov.io": "0.1.6",
 		"dojo-loader": ">=2.0.0-beta",
