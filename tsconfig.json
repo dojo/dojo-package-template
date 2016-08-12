@@ -1,29 +1,22 @@
 {
-	"version": "1.8.10",
+	"version": "2.0.0",
 	"compilerOptions": {
 		"declaration": false,
 		"module": "umd",
 		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"strictNullChecks": true,
 		"outDir": "_build/",
+		"baseUrl": "node_modules",
+		"paths": {},
 		"removeComments": false,
 		"sourceMap": true,
 		"target": "es5",
 		"moduleResolution": "classic"
 	},
-	"filesGlob": [
+	"include": [
 		"./typings/index.d.ts",
 		"./src/**/*.ts",
 		"./tests/**/*.ts"
-	],
-	"files": [
-		"./typings/index.d.ts",
-		"./src/main.ts",
-		"./tests/functional/all.ts",
-		"./tests/intern-local.ts",
-		"./tests/intern-saucelabs.ts",
-		"./tests/intern.ts",
-		"./tests/support/Reporter.ts",
-		"./tests/support/util.ts",
-		"./tests/unit/all.ts"
 	]
 }
