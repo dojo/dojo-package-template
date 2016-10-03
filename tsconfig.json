@@ -13,8 +13,8 @@
 		"moduleResolution": "node"
 	},
 	"include": [
-		"./typings/index.d.ts",
 		"./src/**/*.ts",
-		"./tests/**/*.ts"
+		"./tests/**/*.ts",
+		"./typings/index.d.ts"
 	]
 }
