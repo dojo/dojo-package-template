@@ -26,17 +26,15 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "codecov.io": "0.1.6",
+    "@types/chai": "3.4.*",
+    "@types/glob": "5.0.*",
+    "@types/grunt": "0.4.*",
     "dojo-loader": ">=2.0.0-beta.7",
-    "dts-generator": "~1.7.0",
-    "glob": "^7.0.3",
     "grunt": "~1.0.1",
     "grunt-dojo2": ">=2.0.0-beta.16",
-    "grunt-text-replace": "^0.4.0",
-    "intern": "^3.2.3",
-    "istanbul": "^0.4.3",
-    "remap-istanbul": "^0.6.4",
-    "tslint": "^3.11.0",
+    "intern": "~3.3.2",
+    "istanbul": "^0.4.5",
+    "tslint": "^3.15.1",
     "typescript": "~2.0.3"
   }
 }
