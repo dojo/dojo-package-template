@@ -3,7 +3,6 @@
   "version": "2.0.0-pre",
   "description": "<< DESCRIPTION GOES HERE >>",
   "engines": {
-    "node": "^6.5.0",
     "npm": "^3.10.0"
   },
   "private": true,
