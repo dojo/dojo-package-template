@@ -21,8 +21,7 @@ export const capabilities = {
 export const environments = [
 	{ browserName: 'internet explorer', version: [ '10', '11' ], platform: 'WINDOWS' },
 	{ browserName: 'firefox', platform: 'WINDOWS' },
-	{ browserName: 'chrome', platform: 'WINDOWS' }/*,
-	{ browserName: 'Safari', version: '9', platform: 'OS X' }*/
+	{ browserName: 'chrome', platform: 'WINDOWS' }
 ];
 
 // Maximum number of simultaneous integration tests that should be executed on the remote WebDriver service
@@ -42,8 +41,8 @@ export const initialBaseUrl: string | null = (function () {
 // The desired AMD loader to use when running unit tests (client.html/client.js). Omit to use the default Dojo
 // loader
 export const loaders = {
-	'host-browser': 'node_modules/dojo-loader/loader.js',
-	'host-node': 'dojo-loader'
+	'host-browser': 'node_modules/@dojo/loader/loader.js',
+	'host-node': '@dojo/loader'
 };
 
 // Configuration options for the module loader; any AMD configuration options supported by the specified AMD loader
