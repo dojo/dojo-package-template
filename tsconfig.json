@@ -1,5 +1,5 @@
 {
-	"version": "2.0.3",
+	"version": "2.1.5",
 	"compilerOptions": {
 		"declaration": false,
 		"module": "umd",
@@ -10,7 +10,14 @@
 		"removeComments": false,
 		"sourceMap": true,
 		"strictNullChecks": true,
-		"target": "es5"
+		"target": "es5",
+		"lib": [
+			"dom",
+			"es5",
+			"es2015.iterable",
+			"es2015.symbol",
+			"es2015.symbol.wellknown"
+		]
 	},
 	"include": [
 		"./src/**/*.ts",
