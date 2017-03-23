@@ -3,7 +3,7 @@
   "version": "2.0.0-pre",
   "description": "<< DESCRIPTION GOES HERE >>",
   "engines": {
-    "npm": "^3.10.0"
+    "npm": ">=3.0.0"
   },
   "private": true,
   "homepage": "http://dojotoolkit.org",
