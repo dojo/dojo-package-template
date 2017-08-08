@@ -9,11 +9,11 @@ available at: https://github.com/dojo/meta/blob/master/CONTRIBUTING.md
 For general questions and discussion, join us on Gitter.im at: https://gitter.im/dojo/dojo2
 -->
 
-**Bug / Enhancement** <!-- delete as appropriate -->
+**Bug**
+**Enhancement**
+<!-- delete as appropriate -->
 
 <!-- Summary of enhancement or bug-->
-
-Package Version: <!-- package version -->
 
 **Code**
 
