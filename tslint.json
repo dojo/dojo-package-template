@@ -1,6 +1,7 @@
 {
 	"rules": {
 		"align": false,
+		"arrow-parens": true,
 		"ban": [],
 		"class-name": true,
 		"comment-format": [ true, "check-space" ],
