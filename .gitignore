@@ -6,6 +6,7 @@
 /typings
 .baseDir.ts
 .tscache
+coverage/
 coverage-unmapped.json
 coverage-final.json
 coverage-final.lcov
