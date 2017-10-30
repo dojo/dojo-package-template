@@ -26,15 +26,13 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "@types/chai": "4.0.*",
     "@types/glob": "5.0.*",
     "@types/grunt": "0.4.*",
-    "@types/sinon": "^1.16.31",
     "codecov.io": "0.1.6",
     "@dojo/loader": "beta1",
     "grunt": "~1.0.1",
-    "grunt-dojo2": "beta1",
-    "intern": "^3.4.6",
+    "grunt-dojo2": "2.0.0-beta2.9",
+    "intern": "~4.0.2",
     "typescript": "~2.4.2"
   }
 }
