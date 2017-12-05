@@ -29,10 +29,10 @@
     "@types/glob": "5.0.*",
     "@types/grunt": "0.4.*",
     "codecov.io": "0.1.6",
-    "@dojo/loader": "beta1",
+    "@dojo/loader": "~0.1.1",
     "grunt": "~1.0.1",
     "grunt-dojo2": "latest",
     "intern": "~4.1.0",
-    "typescript": "~2.4.2"
+    "typescript": "~2.6.1"
   }
 }
