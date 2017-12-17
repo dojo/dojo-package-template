@@ -1,5 +1,7 @@
 {
+	"rulesDirectory": ["tslint-plugin-prettier"],
 	"rules": {
+		"prettier": true,
 		"align": false,
 		"arrow-parens": true,
 		"ban": [],
